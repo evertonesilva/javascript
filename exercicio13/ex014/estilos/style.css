@@ -1,0 +1,33 @@
+@charset "UTF-8";
+*{font-family: Arial, Helvetica, sans-serif;}
+
+body, html{
+    background-color: darkcyan;
+}
+header { 
+    background-color: rgb(11, 168, 168);
+    text-align: center;
+    color: white;
+    width: 540px;
+    height: 80px;
+    margin: auto;
+    border-radius: 20px;
+}
+header > h1{
+    transform: translateY(55%);
+}
+section {
+    width: 500px;
+    display: block;
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    transform: translate(0 , 20%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
+}
+
+footer > p{
+    display: block;
+    text-align: center;
+}
