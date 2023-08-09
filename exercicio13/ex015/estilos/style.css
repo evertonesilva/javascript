@@ -17,6 +17,7 @@ header > h1{
     transform: translateY(55%);
 }
 section {
+    position: relative;
     width: 500px;
     display: block;
     background-color: white;
@@ -27,6 +28,8 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 }
 
-footer > p{
+footer {
+    display: block;
+    position: relative;
     text-align: center;
 }
