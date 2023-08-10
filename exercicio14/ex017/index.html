@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do Dia</title>
+    <title>Tabuáda</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
-        <h1>Hora do dia</h1>
+        <h1>Tabuada</h1>
+        
     </header>
     <section>
-        <div>Testando</div>
-        <div></div>
+        <div><label for="num">Número:</label>
+            <input type="number" name="num" id="num">
+            <input type="button" value="Gerar Tabuada" onclick="calcular()"></div>
+        <div>
+            <p><select name="tabuada" id="txttabuada" size="10"></select></p>
+        </div>
        </section> 
     <footer>
         <p><a href="https://www.instagran.com/everton.evaristo31" target="_blank">&copy;Everton Evaristo</a></p>

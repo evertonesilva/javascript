@@ -30,4 +30,6 @@ section {
 footer > p{
     display: block;
     text-align: center;
+    padding: 10px;
+    margin-top: 50px ;
 }
