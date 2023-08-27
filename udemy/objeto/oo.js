@@ -1,10 +1,11 @@
 // CÓDIGO NÃO EXECUTÁVEL!!!
 
 //PROCEDURAL
-processamento(valor1, valor2, valor3)
+
+/* processamento(valor1, valor2, valor3)*/
 
 // OO Orientação a Objetos
-objeto {
+/* objeto {
     valor1,
     valor2,
     valor3,
@@ -12,5 +13,5 @@ objeto {
         //...
     }
 }
-
+ */
 objeto.processamento()//Foco passou a ser o objeto
