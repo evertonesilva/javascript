@@ -1,5 +1,5 @@
 function transformarEmDinheiro ( valorDecimal){
-    valorEmReais = `R$ ${valorDecimal.toFixed(2).toString().replace('.', ',')}`
+    valorEmReais = `R$ ${valorDecimal.toFixed(2).replace('.', ',')}`
     console.log(valorEmReais)
 }
 
