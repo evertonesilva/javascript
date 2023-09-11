@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação JavaScript</title>
+</head>
+<body>
+    <h1>Lógica de Programação com JavaScript</h1>
+    <script>
+        let jogador1 = Number(window.prompt('Jogador 1: Digite um número'));
+        let jogador2 = Number(window.prompt('Jogador 2: Digite um número'));
+        if (jogador1 == jogador2){
+            window.alert('Empate!!!')
+        } else{
+            let sorteado = parseInt(Math.random() * 2)
+            if ( sorteado === 0 && jogador1 < jogador2 || sorteado === 1 && jogador1 > jogador2){
+                window.alert('Ganhou o jogador 1')
+            } else {
+                window.alert('Ganhou o jogador 2')
+            }
+        }
+    </script>
+</body>
+</html>
