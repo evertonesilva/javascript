@@ -14,18 +14,22 @@
     <script>
         
         function criar(){
-            let numero = Number(prompt('Digite um número:'));
+            let numero = Number(window.prompt('Digite um número:'));
+            limpar()
             let i = 1;
             while(i <= 1000){
-                output = numero * i++
-            } i++;
+                mensagem += `${numero} X ${i} = ${(numero * i)} <br>` 
+                i++;
+            } 
+                output.innerHTML = mensagem;
+        }
+        function limpar(){
+            mensagem = '';
+            output.innerHTML = mensagem;
         }
 
         let output = document.querySelector('#output');
-        
-        
-
-        output.innerHTML = mensagem;
+        let mensagem = '';
     </script>
 </body>
 </html>
