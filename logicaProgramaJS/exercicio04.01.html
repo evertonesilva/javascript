@@ -8,43 +8,41 @@
 <body>
     <h1>Lógica de Programação com JavaScript</h1>
 
-    <button onclick="somar()">+</button>
-    <button onclick="subtrarir()">-</button>
-    <button onclick="multiplicar()">*</button>
-    <button onclick="dividir()">/</button>
+    <button onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">*</button>
+    <button onclick="calcular('/')">/</button>
     <div id="output"></div>
     <script>
-        let numero1 = Number(window.prompt('Digite um número:'));
+        let numero = Number(window.prompt('Digite um número:'));
         escerver()
         function escerver(){
             let output = document.querySelector('#output');
-            output.innerHTML = numero1;
+            output.innerHTML = numero;
         }
 
-        function somar(){
-            let somanum = Number(window.prompt('Digite um número para somar(+)'));
-            numero1 += somanum;
+        function calcular(simbolo){
+            let numero1 = Number(window.prompt('Digite um número: '));
+            
+            switch (simbolo){
+                case '+':
+                    numero += numero1;
+                    break
+                case '-':
+                    numero -= numero1;
+                    break
+                case '*':
+                    numero *= numero1;
+                    break
+                case '/':
+                    numero /= numero1;
+                    break
+            }
             escerver();
         }
 
-        function subtrarir(){
-            let subtrairnum = Number(window.prompt('Digite um número para subtrair(-)'));
-            numero1 -= subtrairnum;
-            escerver();
-        }
 
-        function multiplicar(){
-            let multnum = Number(window.prompt('Digite um número para multiplicar(X)'));
-            numero1 *= multnum;
-            escerver();
-        }
-
-        function dividir(){
-            let divinum = Number(window.prompt('Digite um número para dividir(/)'));
-            numero1 /= divinum;
-            escerver();
-
-        }
+        
     </script>
     
 </body>
