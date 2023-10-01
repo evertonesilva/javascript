@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação JavaScript</title>
+</head>
+<body>
+    <h1>Lógica de Programação com JavaScript</h1>
+    <button onclick="calcularAlert()">Area alert</button>
+    <button onclick="calculardiv()">Area div</button>
+    <div id="output"></div>
+    
+    <script>
+                
+        function calcularAlert(){
+            let largura = Number(window.prompt('Digite um número: '))
+            let altura = Number(window.prompt('Digite outro número: '))
+            let area = calculo(largura, altura)
+            
+            alert(`O resultado da área é: ${area}`)
+            
+
+        }
+        function calculardiv(){
+            let largura = Number(window.prompt('Digite um número: '))
+            let altura = Number(window.prompt('Digite outro número: '))
+            let area = calculo(largura, altura)
+            document.querySelector('#output').innerHTML = `O resultado da área é: ${area} m2`
+           }
+           function calculo(l, a){
+            return l * a
+           }
+    </script>    
+</body>
+</html>
