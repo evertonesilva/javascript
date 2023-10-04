@@ -1,0 +1,3 @@
+function gerarNumerosEntre(min, max){
+    
+}
