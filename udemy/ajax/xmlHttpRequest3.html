@@ -11,6 +11,27 @@
     <h1>Estados</h1>
 
     <script>
-        // ...
+        function ajax(config){
+            const xhr = new XMLHttpRequest()
+            xhr.open(config.metodo, config.url, true)
+
+            xhr.onreadystatechange = e => {
+                if(xhr.readystate === 4){  
+                    if(xhr.status ===200){
+                        config.sucesso(xhr.responseXML)
+                    } else if(xhr.status >= 400){
+                        config.erro({
+                            codigo: xhr.status,
+                            texto: xhr.statusText
+                        })
+                    }
+                }
+            }
+            xhr.send()
+        }
+        ajax({
+            url: "dados/estados.xml",
+            metodo
+        })
     </script>
 </body>
